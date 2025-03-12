@@ -1,0 +1,106 @@
+.style-logement {
+  display: flex;
+  flex-direction: column;
+
+  .container-logement {
+    display: flex;
+    flex-direction: column;
+    .item1-logement {
+      display: flex;
+
+      h1 {
+        color: #ff6060;
+        font-family: Montserrat;
+        font-weight: 500;
+      }
+    }
+    .item1-logement,
+    .item-logement,
+    .item2-logement,
+    .item3-logement {
+      display: flex;
+      justify-content: space-between;
+    }
+    .item2-logement {
+      .etoile-logement {
+        .host-logement-hidden {
+          display: none;
+        }
+      }
+    }
+    .host-logement {
+      display: flex;
+      gap: 0.5rem;
+      color: #ff6060;
+      margin-top: 1.5rem;
+
+      .name-host {
+        width: 60px;
+      }
+    }
+    .tage-logement {
+      display: flex;
+      gap: 10px;
+      color: #ff6060;
+
+      .text-tag {
+        background-color: #ff6060;
+        color: #fff;
+        border-radius: 10px;
+        width: 135px;
+        height: 25px;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .style-logement {
+    display: flex;
+    flex-direction: column;
+
+    .container-logement {
+      display: flex;
+      flex-direction: column;
+
+      .item1-logement {
+        display: flex;
+        flex-direction: column;
+        .host-logement {
+          display: none;
+        }
+      }
+      .item2-logement {
+        display: flex;
+        flex-direction: column;
+        .etoile-logement {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .host-logement-hidden {
+            display: flex;
+            gap: 0.8rem;
+
+            .name-host {
+              width: 55px;
+            }
+            & p {
+              color: #ff6060;
+            }
+          }
+        }
+      }
+      .item3-logement {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 1rem;
+      }
+      padding: 1rem;
+    }
+  }
+}
