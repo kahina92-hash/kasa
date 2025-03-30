@@ -16,7 +16,7 @@ function Apropos() {
     
     <div className="apropos-container">
     
-      {/* <Banner src="about.png" /> */}
+      <Banner src="about.png" />
       <div className="apropos">
         <div className="apropos-content">
           <div>
