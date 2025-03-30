@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapse from '../../components/Collapse/Collapse'; // Utilisation du composant Collapse
-
+import monImage from './about.png'
 import './apropos.scss';
 import Banner from '../../components/Banner/Banner';
 function Apropos() {
@@ -16,7 +16,7 @@ function Apropos() {
     
     <div className="apropos-container">
     
-      <Banner src="about.png" />
+      <Banner src={ monImage} />
       <div className="apropos">
         <div className="apropos-content">
           <div>
