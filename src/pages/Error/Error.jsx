@@ -1,12 +1,12 @@
 import "./error.scss";
 import { Link } from "react-router-dom";
 
-
+import monImage from './404@2x.png'
 function Error() {
   return (
     <div>
  
-     <div className="item-error"><img src="404@2x.png" alt="imageerror" /></div> 
+     <div className="item-error"><img src={monImage} alt="imageerror" /></div> 
 
    
       
